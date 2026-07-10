@@ -8,14 +8,15 @@ $calendar-padding: 10px;
 $day-hover-color: #ffbfcb;
 $day-hover-transform: translateY(-20px);
 $anim-duration: 0.5s;
-$calendar-width: (7 * $day-size) + 6 * $calendar-gap;
-$day-size: 100px;
+$calendar-width: calc(
+  7 * #{$day-size} + 6 * #{$calendar-gap} + 2 * #{$calendar-padding}
+);
 $week-days: (
-  mon: 0,
-  tue: 1,
-  wed: 2,
-  thu: 3,
-  fri: 4,
-  sat: 5,
-  sun: 6,
+  sun: 0,
+  mon: 1,
+  tue: 2,
+  wed: 3,
+  thu: 4,
+  fri: 5,
+  sat: 6,
 );

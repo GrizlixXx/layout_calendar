@@ -13,6 +13,7 @@
   display: flex;
   flex-wrap: wrap;
   width: $calendar-width;
+  box-sizing: border-box;
   padding: $calendar-padding;
   gap: $calendar-gap;
 
@@ -44,7 +45,9 @@
     height: $day-size;
 
     cursor: pointer;
-    transition-duration: $anim-duration;
+    transition:
+      background-color $anim-duration,
+      transform $anim-duration;
 
     &::before {
       font-family: $font-family;
